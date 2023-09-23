@@ -5,7 +5,7 @@ public class Ejemplo2VertInf {
 		System.out.println("Informacion sobre el fichero:");
 		File f = new File("C:\\Users\\MICHAEL");
 		if (f.exists()) {
-			System.out.println("Nombre del fichero: "+f.getName());
+			System.out.println("Noxcmbre del fichero: "+f.getName());
 			System.out.printf("Ruta: "+f.getPath());
 			System.out.printf("%nRuta absoluta: "+f.getAbsolutePath());
 			System.out.println("%nSe puede leer: "+f.canRead());
