@@ -10,14 +10,14 @@ public class Ejercicio1_1 {
 		
 		// 1 de 2 soluciones
 		for (int i = 0; i < lista.length; i++) {
-			System.out.println(lista[i]);
+			System.out.println(lista[i].getName());
 		}
 		
 		
 		//2 de 2 soluciones (usando Collections)
-		ArrayList<File> lista2 = new ArrayList<>();
+		ArrayList<String> lista2 = new ArrayList<>();
 		for (int i = 0; i < lista.length; i++) {
-			lista2.add(lista[i]);
+			lista2.add(lista[i].getName());
 		}
 		System.out.println(lista2);
 		
