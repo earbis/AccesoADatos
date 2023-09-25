@@ -21,5 +21,16 @@ public class Ejemplo3makeDir {
 		} catch (IOException e) {	
 			e.printStackTrace();
 		}
+		f1.renameTo(new File(d,"Fichero1Nuevo.txt"));
+		try {
+			File f3 = new File("NUEVODIR/Fichero3.txt");
+			if (f3.createNewFile()) {
+				System.out.println("lo ha creado");
+			} else {
+				System.out.println("no lo ha creado");
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
