@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class EscritorConBuffer {
+public class LectorYEscritorConArray {
 	public static void main(String[] args) throws IOException {
 		File fichero = new File(".\\LeerFicheroTexto.txt");
 			File copia = new File(".\\CopiaFicheroTexto.txt");
