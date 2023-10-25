@@ -12,7 +12,7 @@ public class Main {
 		Persona p1 = new Persona("Juan","guadalajara");
 		Persona p2 = new Persona("Ana","Madrid");
 		Persona p3 = new Persona("Luis","Granada");
-		Persona p4 = new Persona("Pedro","Asturias");
+		Persona p4 = new Persona("Pedro","Madrid");
 		db.store(p1);
 		db.store(p2);
 		db.store(p3);
