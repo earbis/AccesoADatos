@@ -6,6 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/db4o"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/dbo4"/>
 	<classpathentry kind="src" path="Ejercicios"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
