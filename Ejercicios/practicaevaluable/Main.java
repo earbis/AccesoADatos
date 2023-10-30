@@ -22,7 +22,7 @@ public static void main(String[] args) {
 		
 		//ver la consulta
 		while(result.next()) {
-			System.out.printf("%d, %s, %s %n",result.getInt(1),result.getString(2),result.getString(3));	
+			System.out.printf("%d, %s, %s, %s, %n",result.getInt(1),result.getString(2),result.getString(3),result.getString(4));	
 		}
 		result.close();
 		sentencia.close();
