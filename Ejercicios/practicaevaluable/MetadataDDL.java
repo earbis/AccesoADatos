@@ -5,8 +5,11 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 
-public class InformacionGeneral {
+public class MetadataDDL {
 	public static void main(String[] args) {
+		/*
+		 * ESTE PROGRAMA DEVUELVE METAINFORMACION
+		 */
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/library", "Earbis", "pass.admin");

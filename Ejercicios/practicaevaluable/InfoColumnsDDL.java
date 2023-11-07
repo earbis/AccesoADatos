@@ -6,9 +6,12 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Metadata {
+public class InfoColumnsDDL {
+	/*
+	 *  ESTA CLASE PRODUCE EL CONTENIDO DE LAS TABLAS
+	 */
 	String tablar;
-	public Metadata(String tablar) {
+	public InfoColumnsDDL(String tablar) {
 		this.tablar=tablar;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
