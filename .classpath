@@ -8,6 +8,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/db4o"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/dbo4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jasperReports"/>
 	<classpathentry kind="src" path="Ejercicios"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sqlite"/>
 	<classpathentry kind="output" path="bin"/>
