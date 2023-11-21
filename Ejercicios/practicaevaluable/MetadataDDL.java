@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 public class MetadataDDL {
 	public static void main(String[] args) {
 		/*
-		 * ESTE PROGRAMA DEVUELVE METAINFORMACION
+		 * ESTE PROGRAMA DEVUELVE METAINFORMACION DE TODA LA BASE DE DATOS
 		 */
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
