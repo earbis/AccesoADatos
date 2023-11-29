@@ -9,6 +9,9 @@ import java.sql.Statement;
 
 public class ResulsetBooks {
 	public static void main(String[] args) {
+		/*
+		 * ESTE PROGRAMA USA RESULTSETMETADATA PARA DAR INFORMACION SOBRE LA TABLA LIBROS
+		 */
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/library", "Earbis","pass.admin");
