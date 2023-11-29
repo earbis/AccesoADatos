@@ -43,13 +43,13 @@ public class PreparedStatementyPermisos {
 		while (rs.next()) {
 			System.out.printf(" Autor: %s", rs.getString(1));
 		}
-		/*
-		Revocar permisos previamente concedidos
+		
+		//Revocar permisos previamente concedidos
         String sql5 = "REVOKE SELECT, INSERT, UPDATE, DELETE ON authors FROM ?@'localhost' ";
         PreparedStatement sentencia5 = conexion.prepareStatement(sql5) ;
             sentencia5.setString(1, "Prueba");
             sentencia5.execute();
-        */
+        
 		rs.close();
 		conexion.close();
 	}

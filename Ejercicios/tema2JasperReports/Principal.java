@@ -1,4 +1,4 @@
-package Tema2JasperReports;
+package tema2JasperReports;
 
 public class Principal {
 
