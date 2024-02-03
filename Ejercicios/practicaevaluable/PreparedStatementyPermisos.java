@@ -51,7 +51,7 @@ public class PreparedStatementyPermisos {
 		//cierro la conexion de prueba antes de quitarle los permisos al usuario
 		conexionPrueba.close();
 		
-		// Revocar permisos previamente concedidos
+		//Revocar permisos previamente concedidos
         String sql5 = "REVOKE SELECT, INSERT, UPDATE, DELETE ON authors FROM ?@'localhost' ";
         PreparedStatement sentencia5 = conexion.prepareStatement(sql5) ;
             sentencia5.setString(1, "Prueba");

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name=" CustomReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3a00e0d4-0068-4710-94bc-835ba4d69170">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="CustomBeansAdapter"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="street" class="java.lang.String">
+		<fieldDescription><![CDATA[street]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="city" class="java.lang.String">
+		<fieldDescription><![CDATA[city]]></fieldDescription>
+	</field>
+	<sortField name="city"/>
+	<filterExpression><![CDATA[$F{city}.contains( "Oslo")]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="82b929a9-a91a-49af-a5c9-b72677e7ca9b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eb0d60b1-0213-4692-a14d-dd0ba64ea791"/>
+				</reportElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="100" height="30" uuid="5b8368e5-39ae-4437-9b20-11c2d0f6d3ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="29336603-53f3-453c-a5bf-8930bdc2be5e"/>
+				</reportElement>
+				<text><![CDATA[street]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="06c375e8-9635-4abd-a0db-3717e8ad88e8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eb0d60b1-0213-4692-a14d-dd0ba64ea791"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="100" height="30" uuid="4269470f-7c7f-496c-8381-bc44bebf12c3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="29336603-53f3-453c-a5bf-8930bdc2be5e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{street}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
