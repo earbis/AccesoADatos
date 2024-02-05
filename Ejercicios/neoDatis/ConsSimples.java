@@ -2,16 +2,19 @@ package neoDatis;
 
 import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
+import org.neodatis.odb.ObjectValues;
 import org.neodatis.odb.Objects;
+import org.neodatis.odb.Values;
 import org.neodatis.odb.core.query.IQuery;
 import org.neodatis.odb.core.query.criteria.Where;
 import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
+import org.neodatis.odb.impl.core.query.values.ValuesCriteriaQuery;
 
 public class ConsSimples {
 
     public static void main(String[] args) {
         ODB odb = ODBFactory.open("neodatis.test");
-
+        	
             IQuery query = new CriteriaQuery(Jugador.class, Where.equal("deporte", "tenis"));
             query.orderByAsc("nombre");
             int i = 1;
@@ -30,6 +33,7 @@ public class ConsSimples {
             } catch (Exception e) {
 				e.getMessage();
 			}
+			
             
             
             // Process the retrieved objects
